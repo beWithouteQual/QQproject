@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QQ注册</title>
+    <!-- 引入favicon图标 -->
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <!-- 引入css公共样式文件 -->
+    <link rel="stylesheet" href="./css/common.css">
+    <!-- 引入login.css文件 -->
+    <link rel="stylesheet" href="./css/login.css" class="css">
+    <!-- jq -->
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/login.js"></script>
+
+</head>
+<script>
+    function getE(elementId) {
+        return document.getElementById(elementId).value;
+    }
+    function divId(elementId) {
+        return document.getElementById(elementId);
+    }
+    /*用户名验证*/
+    function checkUser() {
+        console.log(111);
+        var user = getE("user");
+        var userId = divId("user_prompt");
+        userId.innerHTML = "";
+        var reg = /^[\u4e00-\u9fa5]{2,8}$/;
+        if (reg.test(user) == false) {
+            userId.innerHTML = "此用户名无法使用!注意格式(由2-8个汉字组成)";
+            return false;
+        }
+        userId.innerHTML = "<span class='iconfont'>&#xe6a0;</span> 这儿名字还差不多！"
+        return true;
+    }
+    /*密码验证*/
+    function checkPwd() {
+        var pwd = getE("pwd");
+        var pwdId = divId("pwd_prompt");
+        pwdId.innerHTML = "";
+        var reg = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[^]{8,16}$/;
+        if (reg.test(pwd) == false) {
+            pwdId.innerHTML = "密码不能含有非法字符，长度在8-16之间";
+            return false;
+        }
+        pwdId.innerHTML = "<span class='iconfont'>&#xe6a0;</span>密码强度非常牛皮";
+        return true;
+    }
+
+    /*验证手机号码*/
+    function checkMobile() {
+        var mobile = getE("mobile");
+        var mobileId = divId("mobile_prompt");
+        var regMobile = /^([1][358][0-9]{9})|([1][4][37][0-9]{8})|([1][7][01367][0-9]{8})$/;
+        if (regMobile.test(mobile) == false) {
+            mobileId.innerHTML = "手机号码格式不正确，请重新输入";
+            return false;
+        }
+        mobileId.innerHTML = "<span class='iconfont'>&#xe6a0;</span>手机号码格式正确，请点击发送验证码";
+        return true;
+    }
+</script>
+
+<body>
+    <!-- 左侧背景切换开始 -->
+    <div class="flex">
+        <div class="bg_l">
+            <div class="bg_img">
+                <h3> 我是logo
+                    <a href="./index.html">
+                        <img src="./images/logo.png" alt="" class="logo">
+                    </a>
+                </h3>
+            </div>
+        </div>
+
+        <!-- 左侧背景切换结束 -->
+        <!-- 右侧表单布局开始 -->
+
+        <div class="login">
+            <!-- 注册头部链接布局开始 -->
+            <div class="login_hd">
+                <div class="logo_liang">
+                    <p>QQ靓号</p>
+                    <a href="#">
+                        <img src="./images/logo3.png" alt=""></a>
+                    <div class="lang_hide">
+                        <div class="lang_input">
+                            <input type="text" placeholder="搜索，起飞起飞">
+                            <button class="lang_btn iconfont">🐕</button>
+                        </div>
+                        <div class="at_link">
+                            <a href="#">生日</a>
+                            <a href="#">星座</a>
+                            <a href="#">爱情</a>
+                            <a href="#">手机</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="lang">
+                    <a href="#">简体中文<span class="tg"></span></a>
+                    <ul class="lang_ul">
+                        <li><a href="#">繁体中文</a></li>
+                        <li><a href="#">歪果话</a></li>
+                    </ul>
+                </div>
+                <div class="advice"><a href="#">意见反馈</a></div>
+            </div>
+            <!-- 注册头部链接布结束 -->
+            <!-- 注册bd表单布局开始 -->
+
+            <div class="login_bd">
+                <h1>欢迎注册QQ</h1>
+                <div class="wds">
+                    <h3>每一天，乐在沟通。</h3>
+                    <h3 class="link_free"><a href="#">免费靓号</a></h3>
+                </div>
+                <!-- 核心input框布局开始 -->
+                <div class="input">
+                    <!-- 用户名框 -->
+
+                    <div class="username">
+                        <input type="text" id="user" onblur="checkUser()" placeholder="昵称" />
+                        <!-- <label for="user" class="cv">昵称</label> -->
+                        <span class="img_right"></span>
+                    </div>
+                    <div class="username_span" id="user_prompt">昵称不可以为空</div>
+                    <!-- 密码框 -->
+
+                    <div class="psw">
+
+                        <input type="password" id="pwd" onblur="checkPwd()" placeholder="密码">
+                        <!-- <label for='pwd' class="cv">密码</label> -->
+                        <span class="psw_eye"></span>
+
+                    </div>
+                    <div class="psw_span" id="pwd_prompt">密码不可以为空</div>
+                    <div class="psw_all">
+                        <div class="psw_ad"><span class='iconfont'>&#xe6a0;</span>不能含有空格</div>
+                        <div class="psw_ad"><span class='iconfont'>&#xe6a0;</span>长度为8-16个字符</div>
+                        <div class="psw_ad"><span class='iconfont'>&#xe6a0;</span>必须包含数字，小写字母，大写字母三种字符</div>
+                    </div>
+
+                    <!-- 手机号码选择填写框 -->
+
+                    <div class="rg_phone">
+                        <!-- 手机号码选择框 -->
+
+                        <select name="phone_ad" id="ad_first">
+                            <option value="">+86</option>
+                            <option value="">中国10086</option>
+                            <option value="">中国10086</option>
+                            <option value="">中国10086</option>
+                            <option value="">中国10086</option>
+                        </select>
+                        <!-- 手机号码填写框 -->
+
+                        <div class="phone_num">
+                            <input type="text" id="mobile" onblur="checkMobile()" placeholder="手机号码">
+                            <!-- <label for="mobile" class="cv">手机号码 </label> -->
+                        </div>
+                        <style>
+                            .phone_num input::placeholder {
+                                color: #ccc;
+                                font-size: 20px;
+                                font-weight: lighter;
+                            }
+                        </style>
+                    </div>
+
+                    <div class="ts_wd iconfont" id="mobile_prompt">可通过该手机号找回密码</div>
+                    <!-- 验证码填写 -->
+                    <div class="yzma">
+                        <!-- 验证码填写框 -->
+                        <div class="yzma_num">
+                            <input type="text" placeholder="手机验证码">
+                        </div>
+                        <!-- 验证码按钮 -->
+
+                        <div class="yzma_btn">
+                            <button>发送短信验证码</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 确认按钮 -->
+                <button class="btn_lg">立即注册</button>
+                <!-- 合同要求签订 -->
+                <div class="checked">
+                    <label for="check">
+                        <input type="checkbox" id="check">
+                        <span class="ck_wd">我已阅读并同意相关服务条款和隐私政策</span>
+                    </label>
+                    <span class="tg"></span>
+                </div>
+                <ul class="contract">
+                    <li><a href="#">《QQ号码规则》 </a></li>
+                    <li><a href="#">《隐私政策》 </a></li>
+                    <li><a href="#">《QQ空间服务协议》</a> </li>
+                </ul>
+                <!-- copyright布局 -->
+                <div class="copyright">Copyright © 1998-2021Tencent All Rights Reserved</div>
+            </div>
+            <!-- 注册bd表单布局结束 -->
+
+        </div>
+        <!-- 右侧表单布局结束 -->
+    </div>
+
+</body>
+<script>
+
+
+
+</script>
+
+</html>

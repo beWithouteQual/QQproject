@@ -1,0 +1,351 @@
+.w {
+  width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, Tahoma, Arial, "Hiragino Sans GB",
+    "Hiragino Sans GB W3", "Microsoft YaHei", STXihei, STHeiti, Heiti, SimSun,
+    sans-serif;
+  font-size: 100%;
+}
+
+html,
+body {
+  color: #333;
+}
+
+body {
+  background: #f8f8f8;
+  overflow-x: hidden;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a:link,
+a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fff;
+  /* color: #2f6ef6; */
+}
+
+img {
+  border: none;
+}
+
+em {
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: normal;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  background-color: #f8f8f8;
+  min-height: 990px;
+}
+.banner {
+  position: relative;
+  width: 100%;
+  height: 360px;
+}
+.banner .pic {
+  position: absolute;
+  /* display: block; */
+  right: 100px;
+  top: 100px;
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  z-index: 2;
+}
+.bn-bg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url(../images/ico_banner.png) no-repeat center;
+  background-size: cover;
+}
+.nav {
+  position: absolute;
+  width: 1200px;
+  height: 50px;
+  /* background-color: thistle; */
+  margin-top: 20px;
+}
+
+.nav .logo {
+  float: left;
+  margin-left: 75px;
+  height: 100%;
+}
+.nav .nav-right {
+  float: right;
+  width: 300px;
+  height: 100%;
+  position: relative;
+}
+.nav .nav-right li {
+  float: left;
+  padding: 0 25px;
+  line-height: 40px;
+  color: #fff;
+  font-size: 14px;
+}
+.nav .nav-right li:nth-child(2) {
+  cursor: default;
+}
+.nav .nav-right li:nth-child(2)::after {
+  content: "";
+  position: absolute;
+  top: 13px;
+  right: 0px;
+  width: 1px;
+  height: 15px;
+  background-color: #6594f6;
+  z-index: 3;
+}
+/* 二维码 */
+.nav .nav-right .app {
+  position: relative;
+}
+.nav .nav-right .app .pic {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: -10px;
+  width: 120px;
+  height: 120px;
+  background-color: #fff;
+  border-radius: 3px;
+}
+.nav .nav-right .app .pic .app-icon {
+  width: 80px;
+  height: 80px;
+  margin: 10px 20px 0;
+  background: url(../images/ico_qrcode.png) no-repeat -9px -187px;
+}
+.app .pic p {
+  color: #333;
+  font-size: 12px;
+  text-align: center;
+  margin-top: -8px;
+}
+.nav .nav-right .app .pic::before {
+  content: "";
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-bottom: 9px solid #fff;
+  position: absolute;
+  top: -9px;
+  left: 50px;
+}
+
+.nav-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 32px;
+  background-color: #bfd2f9;
+}
+.nav-footer p {
+  text-align: center;
+  line-height: 32px;
+  font-size: 14px;
+  color: #666e79;
+}
+/* 内容开始 */
+.content-body {
+  height: 242px;
+  width: 100%;
+  /* background-color: thistle; */
+  margin: 50px auto;
+}
+.content-body ul {
+  width: 1070px;
+  height: 100%;
+  margin: 0 auto;
+}
+.content-body ul li {
+  width: 330px;
+  height: 240px;
+  float: left;
+  border: 1px solid #ececec;
+  border-radius: 3px;
+  background: #fff url(../images/ico_content_bg.png) no-repeat 14px 0;
+}
+
+.content-body ul li:nth-child(2) {
+  margin: 0 30px;
+}
+.content-body ul li .one-li {
+  display: block;
+  width: 134px;
+  height: 125px;
+  /* background-color: khaki; */
+  margin: 0 auto;
+  background: url(../images/ico_content_logo.png) no-repeat;
+  /* background-position: 0 0; */
+}
+.content-body ul li .title {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  color: #333;
+  margin: 10px 0;
+}
+.content-body ul li .details {
+  text-align: center;
+  font-size: 14px;
+  color: #a5a5a5;
+  margin-top: 6px;
+}
+/* 更多 */
+.more {
+  display: block;
+  margin: 40px auto 0;
+  height: auto;
+  width: 1050px;
+  text-align: center;
+}
+.more .up {
+  position: relative;
+  height: 50px;
+}
+.more .up p {
+  position: absolute;
+  left: 0;
+  font-size: 16px;
+  color: #333;
+}
+.more .up span {
+  position: absolute;
+  top: 20px;
+  display: block;
+  width: 100%;
+  height: 1px;
+  margin: 10px auto 20px;
+  background-color: #ebebeb;
+}
+.more .down li {
+  position: relative;
+  float: left;
+  width: 218px;
+  height: 155px;
+  /* background-color: thistle; */
+  border-radius: 5px;
+}
+.more li .cover {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 218px;
+  height: 155px;
+  background-color: #2f6ef6;
+  border-radius: 5px;
+}
+.more li .cover i {
+  display: block;
+  width: 90px;
+  height: 90px;
+  background-color: #fff;
+  margin: 10px auto;
+  background: url(../images/ico_qrcode.png) 0 -180px;
+}
+.more li .cover .cover-title {
+  font-weight: bold;
+  font-size: 14px;
+  color: #fff;
+  margin: 8px auto 5px;
+}
+.more li .cover .cover-details {
+  font-weight: 400;
+  font-size: 12px;
+  color: #fff;
+}
+.more .down li .down-i {
+  display: block;
+  width: 65px;
+  height: 60px;
+  background: url(../images/ico_more.png) no-repeat -16px -287px;
+  /* background-color: khaki; */
+  margin: 16px auto 5px;
+}
+.more .down li .down-title {
+  font-weight: bold;
+  font-size: 14px;
+  color: #333;
+}
+.more .down li .down-details {
+  font-size: 12px;
+  color: #a5a5a5;
+  margin-top: 5px;
+}
+.foot-content {
+  position: fixed;
+  bottom: 0;
+  background-color: #ececec;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+  z-index: 5;
+}
+.foot-content p {
+  color: #999;
+  text-align: center;
+  line-height: 21px;
+  margin: 2px 0;
+  font-size: 12px;
+}
+.foot-content p a {
+  color: #999;
+  font-size: 12px;
+  margin: 0 12px;
+}

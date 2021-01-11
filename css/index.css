@@ -1,0 +1,794 @@
+/* header start */
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  z-index: 999;
+}
+
+.header_fixed {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 75px;
+  background: #fff;
+  border-bottom: 1px solid #f1f1f1;
+  z-index: 999;
+}
+
+.header_top {
+  max-width: 1170px;
+  min-width: 980px;
+  height: 75px;
+  margin: 0 auto;
+}
+
+.header_l {
+  float: left;
+}
+
+.header_r {
+  float: right;
+}
+
+.logo {
+  float: left;
+  display: block;
+  width: 160px;
+  height: 0px;
+  padding-top: 76px;
+  background: url(../images/logo.png) no-repeat 0 50%;
+  background-size: 92px 44px;
+}
+
+.header_nav {
+  float: left;
+  width: 450px;
+  padding-left: 18px;
+}
+
+.header_nav li {
+  float: left;
+  margin-left: 20px;
+}
+
+.header_nav li a {
+  float: left;
+  padding: 0 20px;
+  line-height: 75px;
+  font-size: 18px;
+}
+
+.current {
+  background-color: #12b7f5;
+}
+
+.btn_zc {
+  float: left;
+  width: 96px;
+  height: 0;
+  padding-top: 39px;
+  margin-top: 18px;
+  background: url(../images/icons.png) no-repeat 0 -244px;
+}
+
+.btn_zc:hover {
+  background-position: 0 -284px;
+}
+
+.header_r ul {
+  float: right;
+  height: 40px;
+  padding-top: 15px;
+}
+
+.header_r ul li {
+  float: right;
+  margin-left: 30px;
+  line-height: 40px;
+}
+
+/* header end */
+
+/* banner start */
+
+.banner {
+  width: 100%;
+  height: 751px;
+}
+
+.banner ul {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  max-width: 1920px;
+  min-width: 1007px;
+}
+
+.banner ul li {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 1920px;
+  height: 100%;
+  margin-left: -960px;
+}
+
+.pcqq {
+  /* display: none; */
+  background: url(../images/pc_bg.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.one_content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 1900px;
+  min-width: 960px;
+  margin: 0 auto;
+}
+
+.content_title {
+  margin: 0 auto;
+  padding: 6% 0 2%;
+  width: 807px;
+  height: 120px;
+}
+
+.title_text {
+  float: left;
+  width: 459px;
+  height: 116px;
+  background: url(../images/pc-title.png) no-repeat center top;
+}
+
+.title_btn {
+  float: right;
+  width: 347px;
+  height: 120px;
+  background: url(../images/pc-btn.png) no-repeat center top;
+}
+
+.title_btn a {
+  display: block;
+  width: 88%;
+  height: 62%;
+}
+
+.onee_content_img {
+  width: 100%;
+  height: auto;
+}
+
+.circle {
+  position: relative;
+  width: 100%;
+  height: 52px;
+  margin-top: -52px;
+  background: url(../images/linearbot.png) repeat-x left top;
+  text-align: center;
+}
+
+.circle li {
+  display: inline-block;
+  margin: 0 5px;
+  padding: 2px 5px;
+  background: url(../images/nav.png) no-repeat center center;
+  cursor: pointer;
+}
+
+.circle .on {
+  background-image: url(../images/navcur.png);
+}
+
+.mqq {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 100%;
+  background-size: cover;
+  background-image: url(../images/banner_bg2.jpeg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.mqq_content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 1900px;
+  min-width: 960px;
+  margin: 0 auto;
+}
+
+.top_space {
+  display: block;
+  padding-top: 6%;
+}
+
+.mqq_title {
+  margin: 0 auto;
+  color: transparent;
+  position: relative;
+  margin-bottom: 3%;
+  width: 50%;
+  padding-top: 13.5416%;
+  background-image: url(../images/mqq_title.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.btn_download {
+  display: block;
+  margin: 0 auto;
+  color: transparent;
+  position: relative;
+  z-index: 10;
+  width: 15.05208%;
+  padding-top: 4.6354%;
+  background-image: url(../images/btn_download.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.mqq_feature {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.feature_img {
+  height: 26.6666vw;
+  width: 38.9vw;
+  margin: 0 auto;
+  background-image: url(../images/feature_img.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* banner end */
+
+/* 主体内容 start */
+
+.box_content {
+  width: 100%;
+}
+
+.box_content h1 {
+  width: 100%;
+  height: 0;
+  padding-top: 280px;
+  background: #fff url(../images/brand.png) no-repeat center top;
+}
+
+.allbg {
+  width: 100%;
+  height: 600px;
+  background-attachment: fixed !important;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.fisrtbg {
+  background: url(../images/fisrtbg.jpg);
+}
+
+.allqq {
+  width: 100%;
+  height: 584px;
+  background-color: #fff;
+}
+
+.w960 {
+  position: relative;
+  width: 960px;
+  height: 584px;
+  margin: 0 auto;
+}
+
+.tele_text {
+  position: absolute;
+  right: 7px;
+  top: 115px;
+  width: 487px;
+}
+
+.tele_text h2 {
+  width: 100%;
+  height: 0;
+  padding-top: 135px;
+  background: url(../images/qcall_txt.png) no-repeat 0 0;
+}
+
+.tele_text p {
+  width: 100%;
+  margin-bottom: 12px;
+  line-height: 25px;
+  text-align: right;
+  opacity: 0.6;
+  font-size: 18px;
+  letter-spacing: 0.12em;
+}
+
+.box_content p a {
+  color: #12b7f5;
+}
+
+.tele_pic {
+  width: 100%;
+  padding-top: 44px;
+  min-height: 77px;
+  background: url(../images/qcall_figs.png) no-repeat 190px 41px;
+}
+
+.tele_pic li {
+  float: right;
+  border-left: 1px solid #e9e9e9;
+  padding: 58px 0 0;
+  color: #a0a0a0;
+  font-size: 14px;
+  text-align: center;
+}
+
+.tele_pic .p1 {
+  width: 80px;
+  text-align: right;
+}
+
+.tele_pic .p2 {
+  width: 109px;
+}
+
+.tele_pic .p3 {
+  width: 156px;
+  border: 0;
+}
+
+.tele_img {
+  position: absolute;
+  left: -32px;
+  bottom: 0;
+  width: 664px;
+  height: 763px;
+  background: url(../images/pic1.png) no-repeat 0 0;
+}
+
+.secondbg {
+  background: url(../images/avd.jpg);
+}
+
+.computer_text {
+  position: absolute;
+  left: 7px;
+  top: 115px;
+  width: 450px;
+}
+
+.computer_text h2 {
+  width: 100%;
+  height: 0;
+  padding-top: 140px;
+  background: url(../images/txt.png) no-repeat 0 0;
+}
+
+.computer_text p {
+  width: 90%;
+  margin-bottom: 12px;
+  padding-left: 5px;
+  line-height: 25px;
+  opacity: 0.6;
+  font-size: 18px;
+  letter-spacing: 0.12em;
+}
+
+.computer_pic {
+  width: 100%;
+  padding-top: 44px;
+  min-height: 77px;
+  background: url(../images/qfile_figs.png) no-repeat 7px 41px;
+}
+
+.computer_pic li {
+  float: left;
+  border-right: 1px solid #e9e9e9;
+  padding: 58px 0 0;
+  color: #a0a0a0;
+  font-size: 14px;
+  text-align: center;
+}
+
+.computer_pic .p1 {
+  width: 94px;
+  text-align: left;
+  text-indent: 12px;
+}
+
+.computer_pic .p2 {
+  width: 112px;
+}
+
+.computer_pic .p3 {
+  width: 108px;
+  border: none;
+}
+
+.computer_img {
+  position: absolute;
+  right: -100px;
+  bottom: 104px;
+  width: 597px;
+  height: 330px;
+  background: url(../images/pic2.png) no-repeat 0 0;
+}
+
+.thirdbg {
+  background: url(../images/blog.jpg);
+}
+
+.youth_text {
+  position: absolute;
+  right: 7px;
+  top: 120px;
+  width: 495px;
+}
+
+.youth_text h2 {
+  width: 100%;
+  height: 0;
+  padding-top: 135px;
+  background: url(../images/qblog_txt.png) no-repeat 0 0;
+}
+
+.youth_text p {
+  width: 100%;
+  margin-bottom: 12px;
+  line-height: 25px;
+  text-align: right;
+  opacity: 0.6;
+  font-size: 18px;
+  letter-spacing: 0.12em;
+}
+
+.youth_pic {
+  background: url(../images/qblog_figs.png) no-repeat 228px 41px;
+  width: 100%;
+  padding-top: 44px;
+  min-height: 77px;
+}
+
+.youth_pic li {
+  float: right;
+  border-left: 1px solid #e9e9e9;
+  padding: 58px 0 0;
+  color: #a0a0a0;
+  font-size: 14px;
+  text-align: center;
+}
+
+.youth_pic .p1 {
+  width: 80px;
+  text-align: right;
+}
+
+.youth_pic .p2 {
+  width: 105px;
+}
+
+.youth_pic .p3 {
+  width: 106px;
+  border: 0;
+}
+
+.youth_img {
+  position: absolute;
+  left: 88px;
+  bottom: 0;
+  width: 344px;
+  height: 506px;
+  background: url(../images/pic3.png) no-repeat -30px 0;
+}
+
+.youth_wrap {
+  display: none;
+  position: relative;
+  left: 0;
+  top: 217px;
+  width: 291px;
+  height: 150px;
+}
+
+.youth_wrap div {
+  position: absolute;
+  top: 0;
+  width: 150px;
+  height: 150px;
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0);
+  }
+  60% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.youth_wrap .p1 {
+  left: -122px;
+  background: url(../images/qblog_fig1.png) no-repeat 0 0;
+  opacity: 1;
+  animation: zoomIn 0.2s cubic-bezier(0, 0.25, 0.08, 1) 0.4s;
+  animation-fill-mode: backwards;
+}
+
+.youth_wrap .p2 {
+  left: 70px;
+  background: url(../images/qblog_fig2.png) no-repeat 0 0;
+  opacity: 1;
+  animation: zoomIn 0.2s cubic-bezier(0, 0.25, 0.08, 1) 0.5s;
+  animation-fill-mode: backwards;
+}
+
+.youth_wrap .p3 {
+  right: -119px;
+  background: url(../images/qblog_fig3.png) no-repeat 0 0;
+  opacity: 1;
+  animation: zoomIn 0.2s cubic-bezier(0, 0.25, 0.08, 1) 0.6s;
+  animation-fill-mode: backwards;
+}
+
+/* 主体内容 end */
+
+/* 遮盖层 */
+
+.login_bg {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 99999;
+}
+
+/* login登录框 start */
+
+.login {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 622px;
+  height: 368px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border: 2px solid #eee;
+  overflow: hidden;
+  z-index: 999999;
+}
+
+.login a:hover {
+  text-decoration: underline;
+}
+
+.login_header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 50px;
+  width: 50px;
+  font-family: "微软雅黑";
+  z-index: 1000;
+}
+
+.login_header .close {
+  float: right;
+  width: 47px;
+  height: 20px;
+  background: url(../images/icon_3_tiny.png) no-repeat -221px -126px;
+}
+
+.login_header .close:hover {
+  background-position: -221px -151px;
+}
+
+.title {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 16px;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.qlogin_tips {
+  color: #666;
+  font-size: 16px;
+  text-align: center;
+  position: relative;
+  margin-bottom: 36px;
+  zoom: 1;
+}
+
+.qlogin_tips a {
+  color: #3481cf;
+}
+
+.qlogin_show {
+  height: 200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.qlogin_show img {
+  height: 130px;
+  width: 130px;
+  border: 1px solid #d3d3d3;
+}
+
+.login_footer {
+  height: 16px;
+  margin-right: 8px;
+  padding-bottom: 8px;
+}
+
+.login_footer a {
+  float: right;
+  font-size: 12px;
+}
+
+.dotted {
+  float: right;
+  color: #bfbfbf;
+  margin: 0 5px;
+  font-size: 12px;
+}
+
+/* login登录框 end */
+
+/* footer start */
+
+.footer {
+  width: 100%;
+  height: 348px;
+  padding-top: 34px;
+  background: #2a2a2a;
+  font-size: 0.75em;
+}
+
+.footer_content {
+  position: relative;
+  width: 960px;
+  height: 205px;
+  margin: 0 auto;
+}
+
+.footer_pic {
+  float: left;
+  width: 510px;
+  padding-left: 8px;
+}
+
+.footer_pic h3 {
+  height: 50px;
+  color: #666;
+  font-size: 14px;
+}
+
+.footer_pic a {
+  float: left;
+  padding-top: 65px;
+  background: url(../images/plats1.png) no-repeat 0 0;
+  text-align: center;
+  font-size: 14px;
+  color: #979797;
+}
+
+.footer_pic a:hover {
+  color: #12b7f5;
+}
+
+.footer_pic .tel {
+  width: 80px;
+  margin-right: 35px;
+  background-position: 0 0;
+}
+
+.footer_pic .tel:hover {
+  background-position: 0px -93px;
+}
+
+.footer_pic .pc {
+  width: 80px;
+  margin-right: 30px;
+  background-position: -105px 0;
+}
+
+.footer_pic .pc:hover {
+  background-position: -105px -93px;
+}
+
+.footer_pic .mac {
+  width: 84px;
+  margin-right: 30px;
+  background-position: -210px 0;
+}
+
+.footer_pic .mac:hover {
+  background-position: -210px -93px;
+}
+
+.footer_pic .pad {
+  width: 76px;
+  background-position: -326px 0;
+}
+
+.footer_pic .pad:hover {
+  background-position: -326px -93px;
+}
+
+.ftall {
+  float: left;
+}
+
+.safe {
+  width: 185px;
+}
+
+.help {
+  width: 175px;
+}
+
+.friendly {
+  width: 80px;
+}
+
+.ftall h3 {
+  height: 25px;
+  color: #666;
+  font-size: 14px;
+}
+
+.ftall li {
+  line-height: 22px;
+}
+
+.friendly_list {
+  position: absolute;
+  right: -55px;
+  top: 25px;
+}
+
+.ftall a {
+  color: #979797;
+}
+
+.ftall a:hover {
+  color: #cfcfcf;
+}
+
+.footer_bottom {
+  clear: both;
+  width: 960px;
+  margin: 0 auto;
+  padding-top: 16px;
+  border-top: 1px solid #666;
+  line-height: 17px;
+  text-align: center;
+  color: #666;
+}
+
+/* footer end */

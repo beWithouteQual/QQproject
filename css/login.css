@@ -1,0 +1,603 @@
+    body,
+    html {
+
+        width: 100%;
+    }
+
+    a {
+        cursor: pointer !important;
+    }
+
+    input {
+        outline: none;
+        border: 0 solid #000;
+    }
+
+    @font-face {
+        font-family: 'iconfont';
+        src: url('iconfont.eot');
+        src: url('iconfont.eot?#iefix') format('embedded-opentype'),
+            url('./iconfont.woff2') format('woff2'),
+            url('iconfont.woff') format('woff'),
+            url('iconfont.ttf') format('truetype'),
+            url('iconfont.svg#iconfont') format('svg');
+    }
+
+    .iconfont {
+        font-family: "iconfont" !important;
+        font-size: 18px;
+
+        font-style: normal;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        /* color: #ccc; */
+        vertical-align: -2px;
+    }
+
+    .flex {
+        display: flex;
+    }
+
+    .bg_l {
+        width: 500px;
+    }
+
+    .bg_img {
+
+        position: fixed;
+        width: 480px;
+        height: 100%;
+        background-image: url(../images/01-1.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        transition: all .2s ease-out;
+    }
+
+    .bg_img .bg {
+        width: 500px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .bg_img h3 {
+        font-size: 0;
+    }
+
+    .logo {
+        position: relative;
+        left: 20px;
+        top: 20px;
+        width: 94px;
+        height: 44px;
+        z-index: 999999;
+    }
+
+    .login {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex: 1;
+    }
+
+    .login_hd {
+        position: relative;
+        align-self: flex-end;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 340px;
+        height: 80px;
+        margin-right: 30px;
+
+
+    }
+
+    .logo_liang {
+        position: relative;
+        width: 80px;
+        height: 30px;
+        background-image: linear-gradient(to right, rgb(76, 194, 240), rgb(197, 76, 10));
+        border-radius: 5px;
+        padding-left: 20px;
+        line-height: 30px;
+        color: #fff;
+    }
+
+    .logo_liang p {
+        margin-left: 5px;
+    }
+
+    .logo_liang a img {
+        position: absolute;
+        top: -5px;
+        left: -5px;
+    }
+
+    .login_hd a {
+        color: #666;
+    }
+
+    .login_hd a:hover {
+        color: #000;
+    }
+
+    .lang_hide {
+        display: none;
+        position: absolute;
+        top: 30px;
+        left: -150px;
+        width: 250px;
+        height: 90px;
+        background-color: #fff;
+        box-shadow: 0 0 15px rgba(0, 0, 0, .3);
+        border-radius: 5px;
+    }
+
+    .lang_hide .lang_input {
+        position: relative;
+        overflow: hidden;
+        width: 250px;
+        height: 40px;
+        border-bottom: 1px solid #eee;
+
+    }
+
+    .lang_input input {
+        float: left;
+        outline: none;
+        margin-left: 10px;
+        width: 200px;
+        height: 40px;
+        font-size: 16px;
+        border: 0 solid #000;
+
+    }
+
+    .lang_input .value {
+        position: absolute;
+        top: 6px;
+        left: 14px;
+        font-size: 16px;
+        color: #ccc;
+    }
+
+    .lang_input button {
+        float: right;
+        width: 35px;
+        height: 40px;
+        border-top-right-radius: 5px;
+        margin-top: 1px;
+        outline: none;
+        border: 0 solid #000;
+        border-left: 1px solid #eee;
+        /* border-bottom: 1px solid #ccc; */
+        background: #fff;
+    }
+
+    .at_link {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .at_link a {
+        margin-top: 15px;
+        width: 50px;
+        height: 20px;
+        font-size: 16px;
+        line-height: 20px;
+        color: rgb(89, 138, 253);
+    }
+
+    .lang {
+        position: relative;
+    }
+
+    .lang span {
+        position: absolute;
+        top: 10px;
+        right: -25px;
+        width: 0;
+        height: 0;
+        line-height: 0;
+        font-size: 0px;
+        border: 8px solid transparent;
+        border-top-color: #ccc;
+        transform-origin: 50% 20%;
+        transition: all .2s;
+
+    }
+
+    .lang_ul {
+        display: none;
+        position: absolute;
+
+        height: 80px;
+        width: 80px;
+        padding-top: 10px;
+
+    }
+
+    .lang_ul li a {
+        display: block;
+        margin-top: 15px;
+        list-style: none;
+        color: #999;
+    }
+
+    .login_bd {
+        width: 570px;
+        height: 670px;
+        margin: 0 auto;
+        margin-top: 10px;
+
+    }
+
+    .login_bd h1 {
+        font-size: 42px;
+    }
+
+    .login_bd h3 {
+        font-size: 30px;
+    }
+
+    .login_bd .wds {
+        display: flex;
+        justify-content: space-between;
+        width: 550px;
+        height: 40px;
+
+        margin-top: 20px;
+    }
+
+    .login_bd .wds a {
+        font-size: 26px;
+        color: rgb(67, 140, 219);
+    }
+
+    .input {
+        width: 550px;
+        font-weight: 200;
+    }
+
+    .username,
+    .psw,
+    .rg_phone {
+        position: relative;
+        overflow: hidden;
+        width: 550px;
+        height: 60px;
+        margin-top: 40px;
+        border-radius: 5px;
+        text-align: center;
+        border: 1px solid #ccc;
+        background-color: #fff;
+    }
+
+
+
+    .psw_eye {
+        position: absolute;
+        top: 12px;
+        left: 495px;
+        width: 44px;
+        height: 36px;
+        /* background-color: PINK; */
+        background-image: url(../images/eye-close@2x.png);
+        background-repeat: no-repeat;
+        background-size: 44px 36px;
+        z-index: 1;
+    }
+
+    .username input,
+    .psw input {
+        width: 500px;
+        height: 60px;
+        font-size: 20px;
+        padding: 0 25px;
+    }
+
+    .username input::placeholder,
+    .psw input::placeholder {
+        color: #ccc;
+        font-size: 20px;
+        font-weight: lighter;
+    }
+
+
+    .username .cv,
+    .psw .cv,
+    .phone_num .cv {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 16px 25px;
+        font-size: 20px;
+        color: #999;
+
+    }
+
+    .username_span,
+    .psw_span {
+        display: none;
+        margin-top: 10px;
+        width: 500px;
+        height: 30px;
+        font-size: 15px;
+
+    }
+
+    .psw_all {
+        display: none;
+        padding-top: 5px;
+    }
+
+    .psw_ad {
+        margin-top: 5px;
+
+        width: 400px;
+        height: 30px;
+        font-size: 15px;
+
+    }
+
+    .psw_ad span {
+        padding-right: 2px;
+        color: #999;
+    }
+
+    .wrong {
+        color: red !important;
+    }
+
+    .right {
+        color: rgb(86, 228, 86) !important;
+    }
+
+    .rg_phone {
+        display: flex;
+        justify-content: space-between;
+        border: 0;
+
+    }
+
+    .rg_phone select {
+        width: 160px;
+        height: 60px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #fff;
+        font-size: 20px;
+        padding-left: 10px;
+        outline: none;
+    }
+
+    .rg_phone .phone_num {
+        box-sizing: border-box;
+        position: relative;
+        width: 300px;
+        height: 60px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        background-color: #fff;
+    }
+
+    .rg_phone .phone_num input {
+
+        width: 250px;
+        height: 58px;
+        font-size: 20px;
+    }
+
+    .rg_phone span {
+        position: absolute;
+        font-size: 25px;
+        top: 12px;
+        height: 25px;
+        right: 170px;
+        font-weight: 200;
+        color: #999;
+    }
+
+
+    .ts_wd {
+        width: 300px;
+        margin-top: 5px;
+        font-size: 14px;
+        color: #999;
+    }
+
+    .yzma {
+
+        position: relative;
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        border: 0;
+
+    }
+
+    .yzma .yzma_num {
+        width: 160px;
+        height: 60px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .yzma input {
+        margin-left: 10px;
+        width: 140px;
+        height: 58px;
+        font-size: 20px;
+        outline: none;
+    }
+
+    .yzma_num input::placeholder {
+        color: #ccc;
+        font-size: 20px;
+        font-weight: lighter;
+    }
+
+    .yzma .yzma_num span {
+        position: absolute;
+        left: 10px;
+        top: 13px;
+        font-size: 25px;
+        height: 25px;
+        font-weight: 200;
+        color: #999;
+    }
+
+    .yzma .yzma_btn {
+        box-sizing: border-box;
+        position: relative;
+        width: 300px;
+        height: 60px;
+        border-radius: 5px;
+
+    }
+
+    .yzma .yzma_btn button {
+
+        width: 300px;
+        height: 60px;
+        outline: none;
+        border: 0 solid #000;
+        color: #fff;
+        font-size: 30px;
+        text-align: center;
+        font-weight: 200;
+        line-height: 60px;
+        background-color: rgb(27, 141, 223);
+        border-radius: 5px;
+    }
+
+
+
+    .btn_lg {
+        width: 550px;
+        height: 60px;
+        outline: none;
+        border: 0 solid #000;
+        color: #fff;
+        font-size: 30px;
+        text-align: center;
+        font-weight: 200;
+        line-height: 60px;
+        background-color: rgb(27, 141, 223);
+        border-radius: 5px;
+        margin-top: 40px;
+    }
+
+    .checked {
+        position: relative;
+        margin-top: 30px;
+        color: #999;
+        font-size: 14px;
+    }
+
+
+
+    .checked .ck_wd {
+        padding-left: 5px;
+    }
+
+    .checked .tg {
+        position: absolute;
+        top: 6px;
+        left: 275px;
+        width: 0;
+        height: 0;
+        line-height: 0;
+        font-size: 0px;
+        border: 8px solid transparent;
+        border-top-color: #ccc;
+        transform-origin: 50% 20%;
+        transition: all .2s;
+
+    }
+
+    .contract {
+        visibility: hidden;
+        margin-left: 15px;
+        margin-top: 5px;
+    }
+
+    .contract li {
+        margin-top: 5px;
+    }
+
+    .contract li a {
+
+        font-size: 14px;
+        color: rgb(67, 140, 219);
+
+    }
+
+    .copyright {
+        margin-top: 50px;
+        text-align: center;
+        font-size: 14px;
+        color: #999;
+
+
+    }
+
+    @media screen and (max-width: 1200px) {
+
+        .bg_l,
+        .bg_img {
+            width: 240px;
+        }
+
+        .bg_img {
+            background-image: url(../images/01-3.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+    }
+
+    .wrong {
+        color: red;
+        padding-left: 20px;
+        background-image: url(../images/error@2x.png);
+        background-repeat: no-repeat;
+        background-size: 18px;
+    }
+
+    .username .img_right {
+        display: none;
+        position: absolute;
+        top: 21px;
+        left: 515px;
+        width: 30px;
+        height: 30px;
+        background-image: url(../images/tick.png);
+        background-repeat: no-repeat;
+    }
+
+
+
+    @media screen and (max-width: 1000px) {
+
+        .bg_l,
+        .bg_img {
+            width: 0px;
+        }
+
+        .bg_img {
+            background-image: url(../images/01-3.jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+        }
+
+    }
+
+    @media screen and (max-width: 760px) {
+        .logo_liang {
+            visibility: hidden;
+        }
+    }
